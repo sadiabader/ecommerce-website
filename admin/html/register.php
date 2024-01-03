@@ -53,36 +53,7 @@ if (isset($_POST['register'])) {
                 <a href="./index.php" class="text-nowrap logo-img text-center d-block py-3 w-100">
                   <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
                 </a>
-                <!-- <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" 
-                            onsubmit="return validateForm()">
-                            <div class="form-floating mb-3">
-                                <input type="text" name="name" id="username" class="form-control" id="floatingText"
-                                    placeholder="Username">
-                                <label for="name">Username</label>
-                                <span id="usererror" class="text-danger font-weight-bold"></span>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" name="email" id="email" class="form-control" id="floatingInput"
-                                    placeholder="Email">
-                                <label for="email">Email address</label>
-                                <span id="emailerror" class="text-danger font-weight-bold"></span>
-                            </div>
-                            <div class="form-floating mb-4">
-                                <input type="password" name="password" id="password" class="form-control"
-                                    id="floatingPassword" placeholder="Password">
-                                <label for="password">Password</label>
-                                <span id="passworderror" class="text-danger font-weight-bold"></span>
-                            </div>
-                            <div class="form-floating mb-4">
-                                <input type="text" name="phone" id="phone" class="form-control" id="floatingPassword"
-                                    placeholder="phone">
-                                <label for="phone">Phone</label>
-                                <span id="phoneerror" class="text-danger font-weight-bold"></span>
-                            </div>
-                   
-                            <button type="submit" class="btn btn-primary py-3 w-100 mb-4" name="submit">Sign Up</button>
-                            <p class="text-center mb-0">Already have an Account? <a href="signin.php">Sign In</a></p>
-                        </form>-->
+
                 <p class="text-center">Your Social Campaigns</p>
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                   <div class="mb-3">
