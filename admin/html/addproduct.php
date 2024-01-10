@@ -30,8 +30,10 @@ if(!isset($_SESSION['useremail'])){
       </div>
       <div class="modal-body">
       <form action="addcategory.php" method="post">
+                  
                   <div class="mb-3">
-                    <label for="exampleInputtext1" class="form-label"> Categoryname</label>
+         
+                    <label for="exampleInputtext1" class="form-label"> Category name</label>
                     <input type="text"name="cname" class="form-control" id="exampleInputtext1" aria-describedby="textHelp">
                   </div>
                   <div class="mb-3">
@@ -40,7 +42,13 @@ if(!isset($_SESSION['useremail'])){
                    <textarea class="form-control"name="cdesc" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                   </div>
                   </div>
-                  <input type="submit"name="Add_category"class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" value="Add product">
+                  <!-- <select class="form-select" aria-label="Default select example" name="status">
+                                    <option selected>Open this select status</option>
+                                    <option value="1">Active</option>
+                                    <option value="2">Deactivate</option> 
+
+                                </select>-->
+                  <input type="submit"name="Add_category"class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" value="Add category">
 
                 </form>
       </div>
@@ -51,7 +59,7 @@ if(!isset($_SESSION['useremail'])){
   </div>
 </div> 
 
-<!-- product modal end-->
+<!-- category modal end-->
 
 
 
@@ -64,7 +72,7 @@ if(!isset($_SESSION['useremail'])){
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -73,7 +81,7 @@ if(!isset($_SESSION['useremail'])){
       </div>
       <div class="modal-body">
       <form action="register.php" method="post">
-                  <div class="mb-3">
+      <div class="mb-3">
                     <label for="exampleInputtext1" class="form-label">Select category</label>
                     <select class="form-select" aria-label="Default select example">
 
@@ -87,7 +95,7 @@ if(!isset($_SESSION['useremail'])){
                     }
                     ?>
   
-</select>
+                   </select>
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputtext1" class="form-label">Pname</label>
@@ -115,7 +123,7 @@ if(!isset($_SESSION['useremail'])){
                   <label for="exampleInputPassword1" class="form-label">Product Code</label>
                     <input type="text"name="pcode" class="form-control">
                  </div>
-                 <input type="submit"name="Addproduct"class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" value="Add product">
+                 <input type="submit"name="add_product"class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" value="Add category">
               
                 </form>
       </div>
