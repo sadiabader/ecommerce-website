@@ -144,6 +144,7 @@ if(!isset($_SESSION['useremail'])){
                 <th scope="col">Image</th>
                 <th scope="col">SKU</th>
                 <th scope="col">Product Code</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -166,6 +167,10 @@ if(!isset($_SESSION['useremail'])){
                 <td><img src="<?php echo 'uploade/'. $data['image'] ?>" alt="<?php echo $data['image'] ?>" height="70px" width="70px"></td>
                 <td><?php echo $data['sku']?></td>
                 <td><?php echo $data['p_code']?></td>
+                <td>
+                <a href="" class="btn btn-primary edit" data-id="<?php echo $data['p_id'] ?>">Edit</a>
+                <a href="" class="btn btn-danger delete" data-id="<?php echo $data['p_id'] ?>">Delete</a>
+          </td>
             </tr>
             <?php
       }
@@ -186,3 +191,4 @@ if(!isset($_SESSION['useremail'])){
 <?php
   include('includes/footer.php');
 ?>
+<script src="./user.js"></script>
